@@ -25,6 +25,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 #ball{
     height: 50px;
@@ -44,7 +45,7 @@
     color: white;
     font-size: 25px;
     font-weight: 600;
-    top: 60px;
+    top: 5px;
 }
 #play{
     position: absolute;
