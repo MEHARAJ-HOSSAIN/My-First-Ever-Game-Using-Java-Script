@@ -104,4 +104,5 @@
     opacity: 0;
     color: rgb(249, 249, 249);
     background: black;
+    pointer-events: none;
 }
