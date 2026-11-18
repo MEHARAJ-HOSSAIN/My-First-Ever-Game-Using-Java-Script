@@ -76,7 +76,7 @@
     background: rgb(11, 144, 108);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(11, 144, 108);
-    border: 1px solid rgb(36, 58, 36);
+    border: 2px solid black;
     font-size: 25px;
     font-weight: 800;
     display: flex;
@@ -105,3 +105,62 @@
     background: black;
     pointer-events: none;
 }
+#back{
+    display: inline-block;
+    height: 50px;
+    width:130px;
+    background: green;
+    border: 2px solid black;
+    border-radius: 24px;
+    box-shadow: 0px 0px 5px black;
+    transition: 1.2s;
+}
+#mode{
+    height: 50px;
+    width:130px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25px;
+}
+#swap{
+    position: absolute;
+    appearance: none;
+}
+#back::before{
+    content: "";
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: rgb(115, 208, 115);
+    position: absolute;
+    top: 7.5px;
+    left:8px;
+    transition: 1.2s;
+    border: 1px solid black;
+    box-shadow: 0px 0px 6px black;
+}
+#swap:checked + #back::before{
+    left: 86px;
+    background: rgb(250, 130, 130);
+    transition: 1.2s;
+}
+#swap:checked + #back{
+    background:rgb(196, 58, 58);
+    transition: 1.2s;
+}
+.line{
+    position: relative;
+    display: flex;
+    gap: 26px;
+    top: 28px;
+}
+#easy{
+    font-weight: 1000;
+    color: green;
+}
+#hard{
+    font-weight: 1000;
+    color: rgb(196, 58, 58);
+}
+
